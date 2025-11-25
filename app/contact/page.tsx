@@ -96,29 +96,14 @@ export default function ContactPage() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      // Formspreeを使用（実際のフォームIDに置き換えてください）
+      // または一時的に確認ページに遷移
+      console.log('Form data:', formData);
 
-      const data = await response.json();
-
-      if (response.ok) {
+      // 仮の処理：バリデーション通過後、完了ページに遷移
+      setTimeout(() => {
         router.push('/contact/thanks');
-      } else {
-        if (data.errors) {
-          const errorObj: {[key: string]: string} = {};
-          data.errors.forEach((err: {field: string; message: string}) => {
-            errorObj[err.field] = err.message;
-          });
-          setErrors(errorObj);
-        } else {
-          alert(data.message || 'エラーが発生しました。時間をおいて再度お試しください。');
-        }
-      }
+      }, 500);
     } catch (error) {
       alert('エラーが発生しました。時間をおいて再度お試しください。');
     } finally {
