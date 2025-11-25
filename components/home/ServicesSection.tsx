@@ -144,7 +144,7 @@ export default function ServicesSection() {
           className="text-center mt-12"
         >
           <Link
-            href="/advanceHP/service/"
+            href="/advanceHP/service"
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
           >
             すべてのサービスを見る
