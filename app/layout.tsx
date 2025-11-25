@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Noto_Sans_JP } from 'next/font/google';
 import './globals.css';
-import Header from '@/components/Header';
+import HeaderNew from '@/components/layout/HeaderNew';
 import Footer from '@/components/Footer';
 
 const inter = Inter({
@@ -29,8 +29,8 @@ export default function RootLayout({
   return (
     <html lang="ja" className={`${inter.variable} ${notoSansJP.variable}`}>
       <body className="font-sans">
-        <Header />
-        <main className="pt-20">
+        <HeaderNew />
+        <main>
           {children}
         </main>
         <Footer />
