@@ -1,0 +1,135 @@
+'use client';
+
+import Link from 'next/link';
+import { useEffect } from 'react';
+
+export default function ServicePage() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll('.fade-in-up');
+      elements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        if (rect.top <= windowHeight * 0.85) {
+          element.classList.add('visible');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const mainServices = [
+    {
+      title: 'ホームページ制作',
+      description: 'コーポレートサイト、サービスサイト、オウンドメディア、採用サイト、LP制作、WEBサイト運用まで、目的に応じた最適なサイトを制作',
+      icon: '🌐',
+      link: '/service/homepage',
+      color: 'from-amber-400 to-amber-600',
+      bgColor: 'bg-amber-50',
+    },
+    {
+      title: 'システム開発',
+      description: 'スマートフォンアプリ、Webアプリケーション、クラウドインフラ構築など、デザインと技術を融合したプロダクト開発',
+      icon: '💻',
+      link: '/service/system',
+      color: 'from-teal-400 to-teal-600',
+      bgColor: 'bg-teal-50',
+    },
+    {
+      title: 'WEBマーケティング事業',
+      description: 'リスティング広告、SNS広告運用で、ビジネスの成長を加速。データ分析と継続的な改善で成果を最大化',
+      icon: '📊',
+      link: '/service/marketing-business',
+      color: 'from-coral-400 to-coral-600',
+      bgColor: 'bg-coral-50',
+    },
+    {
+      title: 'AI研修事業',
+      description: '企業ごとにカスタマイズしたカリキュラムで、チームが自走するAI活用力を育成。実務課題を題材に実践的なスキルを習得',
+      icon: '🤖',
+      link: '/service/ai-training-business',
+      color: 'from-purple-400 to-purple-600',
+      bgColor: 'bg-purple-50',
+    },
+  ];
+
+  return (
+    <div>
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-teal-600 via-teal-700 to-teal-800 text-white py-20 overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-amber-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+
+        <div className="section-container relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <span className="text-teal-200 font-semibold text-sm uppercase tracking-wider">OUR SERVICES</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mt-4 mb-6">
+              事業内容
+            </h1>
+            <p className="text-lg sm:text-xl text-teal-100 leading-relaxed">
+              システム開発からWEBマーケティング、AI研修まで。<br />
+              貴社のデジタル戦略をワンストップでサポートします。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Services */}
+      <section className="section-container bg-white">
+        <div className="text-center mb-16 fade-in-up">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+            <span className="gradient-text">4つの事業の柱</span>
+          </h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            企業のデジタル変革を支援する、包括的なサービスを提供しています
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {mainServices.map((service, index) => (
+            <Link
+              key={index}
+              href={service.link}
+              className="group fade-in-up"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className={`card card-hover h-full bg-gradient-to-br ${service.bgColor} border-2 border-transparent hover:border-opacity-50 transition-all duration-300`}>
+                <div className={`w-20 h-20 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mb-6 text-4xl group-hover:scale-110 transition-transform`}>
+                  {service.icon}
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-800">{service.title}</h3>
+                <p className="text-gray-700 mb-6 leading-relaxed">{service.description}</p>
+                <div className={`bg-gradient-to-r ${service.color} bg-clip-text text-transparent font-semibold flex items-center`}>
+                  詳しく見る
+                  <svg className="w-5 h-5 ml-2 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="section-container bg-gradient-to-r from-teal-600 to-teal-700 text-white">
+        <div className="text-center max-w-4xl mx-auto fade-in-up">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+            まずはお気軽にご相談ください
+          </h2>
+          <p className="text-lg sm:text-xl mb-8 text-teal-50">
+            貴社のビジネス課題をお聞かせください。<br />
+            最適なソリューションをご提案いたします。
+          </p>
+          <Link href="/contact" className="btn-secondary inline-block">
+            無料相談を申し込む
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+}
