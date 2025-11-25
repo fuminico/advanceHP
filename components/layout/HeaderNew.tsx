@@ -20,7 +20,7 @@ export default function HeaderNew() {
   const services = [
     { name: 'ホームページ制作', href: '/advanceHP/service/homepage/' },
     { name: 'システム開発', href: '/advanceHP/service/system/' },
-    { name: 'WEBマーケティング', href: '/advanceHP/service/marketing-business/' },
+    { name: 'WEBマーケティング事業', href: '/advanceHP/service/marketing-business/' },
     { name: 'AI研修事業', href: '/advanceHP/service/ai-training-business/' },
   ];
 
