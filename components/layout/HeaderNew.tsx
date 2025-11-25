@@ -18,10 +18,10 @@ export default function HeaderNew() {
   }, []);
 
   const services = [
-    { name: 'ホームページ制作', href: '/advanceHP/service/homepage' },
-    { name: 'システム開発', href: '/advanceHP/service/system' },
-    { name: 'WEBマーケティング事業', href: '/advanceHP/service/marketing-business' },
-    { name: 'AI研修事業', href: '/advanceHP/service/ai-training-business' },
+    { name: 'ホームページ制作', href: '/advanceHP/service/homepage/' },
+    { name: 'システム開発', href: '/advanceHP/service/system/' },
+    { name: 'WEBマーケティング事業', href: '/advanceHP/service/marketing-business/' },
+    { name: 'AI研修事業', href: '/advanceHP/service/ai-training-business/' },
   ];
 
   return (
@@ -63,7 +63,7 @@ export default function HeaderNew() {
             {/* サービスドロップダウン */}
             <div className="relative group">
               <Link
-                href="/advanceHP/service"
+                href="/advanceHP/service/"
                 className="px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700 hover:text-teal-600 font-medium inline-flex items-center"
               >
                 事業内容
@@ -99,19 +99,19 @@ export default function HeaderNew() {
             </div>
 
             <Link
-              href="/advanceHP/recruit"
+              href="/advanceHP/recruit/"
               className="px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700 hover:text-teal-600 font-medium"
             >
               採用情報
             </Link>
             <Link
-              href="/advanceHP/company"
+              href="/advanceHP/company/"
               className="px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700 hover:text-teal-600 font-medium"
             >
               会社概要
             </Link>
             <Link
-              href="/advanceHP/contact"
+              href="/advanceHP/contact/"
               className="ml-4 px-6 py-2 bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
             >
               お問い合わせ
@@ -169,7 +169,7 @@ export default function HeaderNew() {
                 HOME
               </Link>
               <Link
-                href="/advanceHP/service"
+                href="/advanceHP/service/"
                 className="block px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -186,21 +186,21 @@ export default function HeaderNew() {
                 </Link>
               ))}
               <Link
-                href="/advanceHP/recruit"
+                href="/advanceHP/recruit/"
                 className="block px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 採用情報
               </Link>
               <Link
-                href="/advanceHP/company"
+                href="/advanceHP/company/"
                 className="block px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 会社概要
               </Link>
               <Link
-                href="/advanceHP/contact"
+                href="/advanceHP/contact/"
                 className="block px-4 py-2 bg-gradient-to-r from-teal-500 to-teal-600 text-white font-semibold rounded-lg text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >

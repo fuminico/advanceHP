@@ -12,7 +12,7 @@ export default function ServicesSection() {
       title: 'ホームページ制作',
       description: 'コーポレートサイト、サービスサイト、採用サイトなど、目的に応じた最適なWebサイトを制作します。',
       features: ['レスポンシブ対応', 'SEO最適化', '運用サポート'],
-      link: '/advanceHP/service/homepage',
+      link: '/advanceHP/service/homepage/',
       color: 'from-teal-400 to-teal-600',
       bgColor: 'bg-teal-50',
     },
@@ -21,7 +21,7 @@ export default function ServicesSection() {
       title: 'システム開発',
       description: 'Webアプリケーション、スマホアプリ、クラウドインフラ構築まで、技術力で課題を解決します。',
       features: ['フルスタック開発', 'クラウド構築', 'API連携'],
-      link: '/advanceHP/service/system',
+      link: '/advanceHP/service/system/',
       color: 'from-amber-400 to-amber-600',
       bgColor: 'bg-amber-50',
     },
@@ -30,7 +30,7 @@ export default function ServicesSection() {
       title: 'WEBマーケティング',
       description: 'リスティング広告、SNS広告運用で、データ分析と継続的な改善により成果を最大化します。',
       features: ['広告運用代行', 'データ分析', '効果測定'],
-      link: '/advanceHP/service/marketing-business',
+      link: '/advanceHP/service/marketing-business/',
       color: 'from-coral-400 to-coral-600',
       bgColor: 'bg-coral-50',
     },
@@ -39,7 +39,7 @@ export default function ServicesSection() {
       title: 'AI研修事業',
       description: '企業ごとにカスタマイズしたカリキュラムで、チームが自走するAI活用力を育成します。',
       features: ['カスタム研修', '実践型学習', 'AI活用支援'],
-      link: '/advanceHP/service/ai-training-business',
+      link: '/advanceHP/service/ai-training-business/',
       color: 'from-purple-400 to-purple-600',
       bgColor: 'bg-purple-50',
     },
@@ -144,7 +144,7 @@ export default function ServicesSection() {
           className="text-center mt-12"
         >
           <Link
-            href="/advanceHP/service"
+            href="/advanceHP/service/"
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
           >
             すべてのサービスを見る

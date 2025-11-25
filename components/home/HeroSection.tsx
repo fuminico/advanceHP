@@ -58,7 +58,7 @@ export default function HeroSection() {
               className="flex flex-col sm:flex-row gap-4"
             >
               <Link
-                href="/advanceHP/contact"
+                href="/advanceHP/contact/"
                 className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
               >
                 無料相談を申し込む
@@ -77,7 +77,7 @@ export default function HeroSection() {
                 </svg>
               </Link>
               <Link
-                href="/advanceHP/service"
+                href="/advanceHP/service/"
                 className="inline-flex items-center justify-center px-8 py-4 border-2 border-teal-600 text-teal-600 hover:bg-teal-50 font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
               >
                 サービスを見る
