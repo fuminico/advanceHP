@@ -43,7 +43,7 @@ export default function StrengthsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-amber-600 font-semibold text-sm uppercase tracking-wider">
+          <span className="text-green-600 font-semibold text-sm uppercase tracking-wider">
             Our Strengths
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 mb-6 text-gray-900">

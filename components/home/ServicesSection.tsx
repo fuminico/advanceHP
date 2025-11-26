@@ -56,7 +56,7 @@ export default function ServicesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-teal-600 font-semibold text-sm uppercase tracking-wider">
+          <span className="text-blue-600 font-semibold text-sm uppercase tracking-wider">
             Our Services
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mt-4 mb-6 text-gray-900">
@@ -145,7 +145,7 @@ export default function ServicesSection() {
         >
           <Link
             href="/service/"
-            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
           >
             すべてのサービスを見る
             <svg

@@ -6,10 +6,10 @@ import AnimatedSection from '../ui/AnimatedSection';
 
 export default function CTASection() {
   return (
-    <AnimatedSection className="py-20 bg-gradient-to-r from-teal-600 via-teal-700 to-teal-800 text-white relative overflow-hidden">
+    <AnimatedSection className="py-20 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white relative overflow-hidden">
       {/* 背景装飾 */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-amber-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-green-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" style={{ animationDelay: '2s' }} />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
@@ -80,7 +80,7 @@ export default function CTASection() {
           >
             <Link
               href="/contact/"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-teal-600 hover:bg-gray-100 font-semibold rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 hover:bg-gray-100 font-semibold rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
             >
               <svg
                 className="w-5 h-5 mr-2"

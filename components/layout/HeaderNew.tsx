@@ -39,7 +39,7 @@ export default function HeaderNew() {
             <motion.div
               whileHover={{ rotate: 6 }}
               transition={{ duration: 0.2 }}
-              className="w-10 h-10 bg-gradient-to-br from-teal-500 to-amber-400 rounded-lg flex items-center justify-center"
+              className="w-10 h-10 bg-gradient-to-br from-blue-600 to-green-500 rounded-lg flex items-center justify-center"
             >
               <span className="text-white font-bold text-xl">A</span>
             </motion.div>
@@ -55,7 +55,7 @@ export default function HeaderNew() {
           <div className="hidden md:flex items-center space-x-1">
             <Link
               href="/"
-              className="px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700 hover:text-teal-600 font-medium"
+              className="px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors text-gray-700 hover:text-blue-600 font-medium"
             >
               HOME
             </Link>
@@ -64,7 +64,7 @@ export default function HeaderNew() {
             <div className="relative group">
               <Link
                 href="/service/"
-                className="px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700 hover:text-teal-600 font-medium inline-flex items-center"
+                className="px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors text-gray-700 hover:text-blue-600 font-medium inline-flex items-center"
               >
                 事業内容
                 <svg
@@ -89,7 +89,7 @@ export default function HeaderNew() {
                     <Link
                       key={service.href}
                       href={service.href}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
                     >
                       {service.name}
                     </Link>
@@ -100,19 +100,19 @@ export default function HeaderNew() {
 
             <Link
               href="/recruit/"
-              className="px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700 hover:text-teal-600 font-medium"
+              className="px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors text-gray-700 hover:text-blue-600 font-medium"
             >
               採用情報
             </Link>
             <Link
               href="/company/"
-              className="px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700 hover:text-teal-600 font-medium"
+              className="px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors text-gray-700 hover:text-blue-600 font-medium"
             >
               会社概要
             </Link>
             <Link
               href="/contact/"
-              className="ml-4 px-6 py-2 bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
+              className="ml-4 px-6 py-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
             >
               お問い合わせ
             </Link>
@@ -163,14 +163,14 @@ export default function HeaderNew() {
             <div className="px-4 py-4 space-y-2">
               <Link
                 href="/"
-                className="block px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700"
+                className="block px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors text-gray-700"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 HOME
               </Link>
               <Link
                 href="/service/"
-                className="block px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700"
+                className="block px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors text-gray-700"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 事業内容
@@ -179,7 +179,7 @@ export default function HeaderNew() {
                 <Link
                   key={service.href}
                   href={service.href}
-                  className="block px-8 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-600 text-sm"
+                  className="block px-8 py-2 rounded-lg hover:bg-blue-50 transition-colors text-gray-600 text-sm"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {service.name}
@@ -187,21 +187,21 @@ export default function HeaderNew() {
               ))}
               <Link
                 href="/recruit/"
-                className="block px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700"
+                className="block px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors text-gray-700"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 採用情報
               </Link>
               <Link
                 href="/company/"
-                className="block px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700"
+                className="block px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors text-gray-700"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 会社概要
               </Link>
               <Link
                 href="/contact/"
-                className="block px-4 py-2 bg-gradient-to-r from-teal-500 to-teal-600 text-white font-semibold rounded-lg text-center"
+                className="block px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 お問い合わせ
