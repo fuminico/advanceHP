@@ -52,9 +52,9 @@ export default function CTASection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6"
           >
-            デジタルビジネスの成功を
+            まずは現状や課題を
             <br />
-            一緒に実現しませんか？
+            お聞かせください
           </motion.h2>
 
           {/* サブテキスト */}
@@ -65,9 +65,9 @@ export default function CTASection() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-lg sm:text-xl mb-8 text-teal-50 leading-relaxed"
           >
-            無料相談で、貴社のビジネス課題をお聞かせください。
+            小さな相談からでも歓迎です。
             <br />
-            経験豊富なコンサルタントが、最適なソリューションをご提案いたします。
+            貴社のデジタル化を、専門知識がなくても相談できる体制で支援します。
           </motion.p>
 
           {/* ボタンエリア */}

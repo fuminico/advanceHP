@@ -7,28 +7,28 @@ import { fadeInLeft, fadeInRight } from '@/lib/animations';
 export default function StrengthsSection() {
   const strengths = [
     {
-      icon: '🎯',
-      title: 'ワンストップ対応',
+      icon: '✓',
+      title: '認定代理店としての信頼性',
       description:
-        '企画・設計からデザイン、開発、マーケティング、運用まで。すべてを社内で完結できる体制で、スピーディかつ一貫性のあるサービスを提供します。',
-      bgGradient: 'from-teal-100 to-teal-200',
-      iconGradient: 'from-teal-400 to-teal-600',
+        'Google Partner、Yahoo!マーケティングソリューションパートナー、Meta Business Partnersとして認定された広告代理店です。最新の情報と媒体連携により、広告成果とビジネス利益を最大化します。',
+      bgGradient: 'from-blue-100 to-blue-200',
+      iconGradient: 'from-blue-400 to-blue-600',
     },
     {
-      icon: '💡',
-      title: 'コンサルティング型',
+      icon: '🔧',
+      title: 'クリエイティブ機能の内製化',
       description:
-        '単なる制作会社ではありません。ビジネス課題を深く理解し、成果にコミットしたコンサルティング型の制作・開発を提供します。戦略設計から伴走します。',
-      bgGradient: 'from-amber-100 to-amber-200',
-      iconGradient: 'from-amber-400 to-amber-600',
+        'LP、バナー、ホームページ制作の専門部署を完備し、広告運用とクリエイティブ制作を社内完結。広告効果に精通したチームとの連携で、素早く的確にPDCAを回し成果を最大化します。',
+      bgGradient: 'from-green-100 to-green-200',
+      iconGradient: 'from-green-400 to-green-600',
     },
     {
-      icon: '🚀',
-      title: '成果重視の運用',
+      icon: '🤝',
+      title: '伴走型の支援体制',
       description:
-        '制作後の成果が重要です。データ分析、A/Bテスト、継続的な改善により、ビジネスの成長を長期的にサポートします。KPI達成まで併走します。',
-      bgGradient: 'from-purple-100 to-purple-200',
-      iconGradient: 'from-purple-400 to-purple-600',
+        '中小企業の現場に寄り添い、専門知識がなくても相談できる体制を整えています。企画から運用、改善まで一気通貫でサポートし、成果が出るまで継続的に伴走します。',
+      bgGradient: 'from-orange-100 to-orange-200',
+      iconGradient: 'from-orange-400 to-orange-600',
     },
   ];
 
@@ -105,10 +105,10 @@ export default function StrengthsSection() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="mt-16 text-center"
         >
-          <div className="inline-block bg-gradient-to-r from-teal-50 to-amber-50 rounded-2xl p-8 shadow-lg">
+          <div className="inline-block bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 shadow-lg">
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <div className="flex-shrink-0">
-                <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-amber-500 rounded-full flex items-center justify-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-green-500 rounded-full flex items-center justify-center">
                   <svg
                     className="w-8 h-8 text-white"
                     fill="none"
@@ -126,10 +126,10 @@ export default function StrengthsSection() {
               </div>
               <div className="text-left">
                 <div className="font-bold text-gray-900 text-lg mb-1">
-                  実績100件以上、顧客満足度95%
+                  Google Partner・Yahoo・Meta認定代理店
                 </div>
                 <div className="text-gray-600">
-                  確かな技術力と丁寧なサポートで、多くの企業様にご満足いただいています
+                  確かな技術力と丁寧なサポートで、地域企業のデジタル化を支援しています
                 </div>
               </div>
             </div>

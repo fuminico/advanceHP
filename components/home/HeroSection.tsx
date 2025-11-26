@@ -33,9 +33,9 @@ export default function HeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-gray-900"
             >
-              デジタルビジネスの成長を、
+              地域企業のDXと成長を、
               <br />
-              <span className="gradient-text">ワンストップで支援</span>
+              <span className="gradient-text">伴走しながら支えるパートナー</span>
             </motion.h1>
 
             {/* サブコピー */}
@@ -45,9 +45,9 @@ export default function HeroSection() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-lg sm:text-xl text-gray-600 leading-relaxed"
             >
-              ホームページ制作、システム開発、WEBマーケティング、AI研修まで。
+              Web制作、システム開発、広告運用、AI研修まで。
               <br />
-              企業のデジタル変革を、確かな技術力とコンサルティングで実現します。
+              中小企業のデジタル化を、専門知識がなくても相談できる体制で支援します。
             </motion.p>
 
             {/* CTAボタン */}
@@ -92,16 +92,16 @@ export default function HeroSection() {
               className="flex items-center gap-8 pt-6 border-t border-gray-200"
             >
               <div>
-                <div className="text-3xl font-bold text-teal-600">100+</div>
-                <div className="text-sm text-gray-600">プロジェクト実績</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-amber-600">15+</div>
+                <div className="text-3xl font-bold text-teal-600">15名</div>
                 <div className="text-sm text-gray-600">専門スタッフ</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-purple-600">95%</div>
-                <div className="text-sm text-gray-600">顧客満足度</div>
+                <div className="text-3xl font-bold text-amber-600">4事業</div>
+                <div className="text-sm text-gray-600">一気通貫サポート</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-purple-600">東京</div>
+                <div className="text-sm text-gray-600">新宿拠点</div>
               </div>
             </motion.div>
           </div>
