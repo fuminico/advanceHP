@@ -79,7 +79,7 @@ export default function CTASection() {
             className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
           >
             <Link
-              href="/advanceHP/contact/"
+              href="/contact/"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-teal-600 hover:bg-gray-100 font-semibold rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
             >
               <svg
@@ -98,7 +98,7 @@ export default function CTASection() {
               無料相談を申し込む
             </Link>
             <Link
-              href="/advanceHP/service/"
+              href="/service/"
               className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white hover:bg-white/10 font-semibold rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
             >
               サービス詳細を見る

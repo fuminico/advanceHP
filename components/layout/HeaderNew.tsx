@@ -35,7 +35,7 @@ export default function HeaderNew() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* ロゴ */}
-          <Link href="/advanceHP/" className="flex items-center space-x-2 group">
+          <Link href="/" className="flex items-center space-x-2 group">
             <motion.div
               whileHover={{ rotate: 6 }}
               transition={{ duration: 0.2 }}
@@ -54,7 +54,7 @@ export default function HeaderNew() {
           {/* デスクトップナビゲーション */}
           <div className="hidden md:flex items-center space-x-1">
             <Link
-              href="/advanceHP/"
+              href="/"
               className="px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700 hover:text-teal-600 font-medium"
             >
               HOME
@@ -63,7 +63,7 @@ export default function HeaderNew() {
             {/* サービスドロップダウン */}
             <div className="relative group">
               <Link
-                href="/advanceHP/service/"
+                href="/service/"
                 className="px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700 hover:text-teal-600 font-medium inline-flex items-center"
               >
                 事業内容
@@ -99,19 +99,19 @@ export default function HeaderNew() {
             </div>
 
             <Link
-              href="/advanceHP/recruit/"
+              href="/recruit/"
               className="px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700 hover:text-teal-600 font-medium"
             >
               採用情報
             </Link>
             <Link
-              href="/advanceHP/company/"
+              href="/company/"
               className="px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700 hover:text-teal-600 font-medium"
             >
               会社概要
             </Link>
             <Link
-              href="/advanceHP/contact/"
+              href="/contact/"
               className="ml-4 px-6 py-2 bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-semibold rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
             >
               お問い合わせ
@@ -162,14 +162,14 @@ export default function HeaderNew() {
           >
             <div className="px-4 py-4 space-y-2">
               <Link
-                href="/advanceHP/"
+                href="/"
                 className="block px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 HOME
               </Link>
               <Link
-                href="/advanceHP/service/"
+                href="/service/"
                 className="block px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -186,21 +186,21 @@ export default function HeaderNew() {
                 </Link>
               ))}
               <Link
-                href="/advanceHP/recruit/"
+                href="/recruit/"
                 className="block px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 採用情報
               </Link>
               <Link
-                href="/advanceHP/company/"
+                href="/company/"
                 className="block px-4 py-2 rounded-lg hover:bg-teal-50 transition-colors text-gray-700"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 会社概要
               </Link>
               <Link
-                href="/advanceHP/contact/"
+                href="/contact/"
                 className="block px-4 py-2 bg-gradient-to-r from-teal-500 to-teal-600 text-white font-semibold rounded-lg text-center"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
