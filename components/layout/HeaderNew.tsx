@@ -99,12 +99,6 @@ export default function HeaderNew() {
             </div>
 
             <Link
-              href="/recruit/"
-              className="px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors text-gray-700 hover:text-blue-600 font-medium"
-            >
-              採用情報
-            </Link>
-            <Link
               href="/company/"
               className="px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors text-gray-700 hover:text-blue-600 font-medium"
             >
@@ -185,13 +179,6 @@ export default function HeaderNew() {
                   {service.name}
                 </Link>
               ))}
-              <Link
-                href="/recruit/"
-                className="block px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors text-gray-700"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                採用情報
-              </Link>
               <Link
                 href="/company/"
                 className="block px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors text-gray-700"
