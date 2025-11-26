@@ -18,10 +18,10 @@ export default function HeaderNew() {
   }, []);
 
   const services = [
-    { name: 'ホームページ制作', href: '/advanceHP/service/homepage/' },
-    { name: 'システム開発', href: '/advanceHP/service/system/' },
-    { name: 'WEBマーケティング事業', href: '/advanceHP/service/marketing-business/' },
-    { name: 'AI研修事業', href: '/advanceHP/service/ai-training-business/' },
+    { name: 'ホームページ制作', href: '/service/homepage/' },
+    { name: 'システム開発', href: '/service/system/' },
+    { name: 'WEBマーケティング事業', href: '/service/marketing-business/' },
+    { name: 'AI研修事業', href: '/service/ai-training-business/' },
   ];
 
   return (
