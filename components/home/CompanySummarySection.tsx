@@ -26,27 +26,13 @@ export default function CompanySummarySection() {
             className="relative"
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              {/* 画像が用意されるまでの仮表示 */}
-              <div className="aspect-[4/3] bg-gradient-to-br from-blue-100 via-white to-green-100 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="text-6xl mb-4">🏢</div>
-                  <div className="text-gray-600">
-                    明るいオフィス風景
-                    <br />
-                    <span className="text-sm">
-                      🖼️ 画像プロンプト: #3 会社情報
-                    </span>
-                  </div>
-                </div>
+              <div className="aspect-[4/3] bg-gradient-to-br from-blue-100 via-white to-green-100">
+                <img
+                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=900&fit=crop&q=80"
+                  alt="株式会社アドバンス オフィス"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              {/* 実際の画像を使用する場合
-              <Image
-                src="/images/company/office.jpg"
-                alt="株式会社アドバンス オフィス"
-                fill
-                className="object-cover"
-              />
-              */}
 
               {/* 装飾要素 */}
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-blue-400 to-green-400 rounded-full opacity-20 blur-2xl" />

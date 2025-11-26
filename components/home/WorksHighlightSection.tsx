@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import AnimatedSection from '../ui/AnimatedSection';
 import { fadeInUp, staggerContainer } from '@/lib/animations';
 
@@ -14,7 +15,8 @@ export default function WorksHighlightSection() {
       serviceType: 'Web制作',
       result: 'CV率 45% UP',
       description: 'ユーザビリティを重視したサイト設計により、購入完了率が大幅に向上。',
-      image: '/images/works/work-01.jpg', // 🖼️ 画像プロンプト: #5 実績紹介
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&q=80',
+      imageAlt: 'ECサイトのモニター画面を確認するチーム',
       tags: ['EC', 'UX改善'],
     },
     {
@@ -24,7 +26,8 @@ export default function WorksHighlightSection() {
       serviceType: 'AI/業務効率化',
       result: '作業時間 60% 削減',
       description: 'RPA導入により定型業務を自動化。従業員は付加価値の高い業務に集中。',
-      image: '/images/works/work-02.jpg', // 🖼️ 画像プロンプト: #5 実績紹介
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&q=80',
+      imageAlt: '業務分析ダッシュボードを確認するビジネスパーソン',
       tags: ['RPA', '業務効率化'],
     },
     {
@@ -34,7 +37,8 @@ export default function WorksHighlightSection() {
       serviceType: '広告運用',
       result: 'CPA 38% 改善',
       description: 'AI分析とクリエイティブ改善でコンバージョン単価を大幅に削減。',
-      image: '/images/works/work-03.jpg', // 🖼️ 画像プロンプト: #5 実績紹介
+      image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop&q=80',
+      imageAlt: '広告レポートを確認するマーケティングチーム',
       tags: ['Google広告', 'CV改善'],
     },
   ];
@@ -78,21 +82,11 @@ export default function WorksHighlightSection() {
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
                 {/* 画像エリア */}
                 <div className="relative h-48 bg-gradient-to-br from-blue-100 to-green-100 overflow-hidden">
-                  {/* 画像が用意されるまでの仮表示 */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="text-4xl mb-2">📊</div>
-                      <div className="text-sm text-gray-600">{work.serviceType}</div>
-                    </div>
-                  </div>
-                  {/* 実際の画像を使用する場合
-                  <Image
+                  <img
                     src={work.image}
-                    alt={work.title}
-                    fill
-                    className="object-cover"
+                    alt={work.imageAlt}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
-                  */}
                 </div>
 
                 {/* コンテンツエリア */}
